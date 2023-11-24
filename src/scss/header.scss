@@ -1,0 +1,132 @@
+@import "window-width";
+@import "color";
+
+$headerHeight: 78px;
+$iconsPath: "../img/icons/";
+
+.header {
+  height: $headerHeight;
+  background-color: $mainColor;
+  border-bottom: 1px solid $subtitleBorderColor;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $maxWidth) {
+    height: 0;
+    border: transparent;
+  }
+}
+
+.header__left-part {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0 10px 10px;
+  gap: 15px;
+
+  @media (min-width: $maxMobileWidth) {
+    margin: 10px 0 10px 15px;
+  }
+}
+
+.header__right-part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 10px 10px 0;
+  gap: 15px;
+
+  @media (min-width: $maxMobileWidth) {
+    margin: 10px 15px 10px 0;
+  }
+}
+
+.header__logo {
+  order: 1;
+}
+
+.divider {
+  padding: 10px;
+}
+
+.header__left-divider {
+  order: 2;
+}
+
+.header__right-divider {
+  display: none;
+}
+
+.header__logo {
+  @media (min-width: $minWidth) {
+    order: 2;
+  }
+  @media (min-width: $maxWidth) {
+    display: none;
+  }
+}
+
+.header__left-divider {
+  @media (min-width: $minWidth) {
+    order: 1;
+  }
+  @media (min-width: $maxWidth) {
+    display: none;
+  }
+}
+
+.header__right-divider {
+  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+    display: block;
+  }
+}
+
+.header__menu-button {
+  background-image: url($iconsPath + "menu.svg");
+  order: 0;
+  @media (min-width: $maxWidth) {
+    display: none;
+  }
+}
+
+.header__call-button {
+  display: none;
+  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+    display: block;
+    background-image: url($iconsPath + "call.svg");
+  }
+}
+
+.header__chat-button {
+  display: none;
+  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+    display: block;
+    background-image: url($iconsPath + "chat.svg");
+  }
+}
+
+.header__profile-button {
+  display: none;
+  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+    display: block;
+    background-image: url($iconsPath + "profile.svg");
+  }
+}
+
+.header__repair-button {
+  background-image: url($iconsPath + "repair.svg");
+  justify-self: flex-end;
+  order: 3;
+  @media (min-width: $maxWidth) {
+    margin-top: 60px;
+  }
+}
+
+.header__search-button {
+  background-image: url($iconsPath + "check_status.svg");
+  justify-self: flex-end;
+  order: 4;
+  @media (min-width: $maxWidth) {
+    margin-top: 60px;
+  }
+}

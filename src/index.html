@@ -1,16 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
-  </body>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta
+          name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta name="descroption" content="Услуги и сервисы по ремонту техники Dell">
+        <meta name="keywords" content="cps dell services digital repair">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__left-part">
+                <img class="header__logo" src="img/cps_logo.svg" alt="Логотип CPS">
+                <img class="header__left-divider divider" src="img/divider.svg" alt="Логотип CPS">
+                <button class="header__menu-button button" name="menu" title="Открыть меню"></button>
+            </div>
+            <div class="header__right-part">
+                <button class="header__call-button button" name="call"></button>
+                <button class="header__chat-button button" name="chat"></button>
+                <button class="header__profile-button button" name="profile"></button>
+                <img class="header__right-divider divider" src="img/divider.svg" alt="Логотип CPS">
+                <button class="header__repair-button button button-with-text" name="repair">
+                    <p class="button-with-text__text">Оставить заявку</p>
+                </button>
+                <button class="header__search-button button button-with-text" name="search">
+                    <p class="button-with-text__text">Статус ремонта</p>
+                </button>
+            </div>
+        </header>
+        <div class="sidebars-layer hidden"></div>
+        <aside class="sidebar-left sidebar-menu">
+            <div class="sidebar__top-part">
+                <div class="sidebar__header">
+                    <div class="sidebar__left-part">
+                        <button class="sidebar__close-button button" name="close" title="Закрыть меню"></button>
+                        <img class="sidebar__logo" src="../img/cps_logo.svg" alt="Логотип CPS">
+                    </div>
+                    <div class="sidebar__right-part">
+                        <button class="sidebar__search-button button" name="search"></button>
+                    </div>
+                </div>
+                <nav class="sidebar__navigation">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Ремонт техники</a>
+                        </li>
+                        <li class="sidebar__paragraph_active">
+                            <a class="sidebar__link_active" title="Вы уже на этой странице">Услуги и сервисы</a>
+                        </li>
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Корпоративным клиентам</a>
+                        </li>
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Продавцам техники</a>
+                        </li>
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Партнёрам</a>
+                        </li>
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Производителям</a>
+                        </li>
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Наши сервисные центры</a>
+                        </li>
+                        <li class="sidebar__paragraph">
+                            <a class="sidebar__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar__bottom-part">
+                <div class="sidebar__buttons-bottom">
+                    <button class="sidebar__call-button button" name="call"></button>
+                    <button class="sidebar__chat-button button" name="call"></button>
+                    <button class="sidebar__profile-button button" name="call"></button>
+                </div>
+                <p class="sidebar__mail">mail@cps.com</p>
+                <p class="sidebar__phone-number">8 800 890 8900</p>
+                <div class="sidebar__lang-changer">
+                    <a class="sidebar__link_active" title="Выбран данный язык">RU</a>
+                    <a class="sidebar__link" href="">EN</a>
+                    <a class="sidebar__link" href="">CH</a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <h1 class="title">
+                Услуги и сервисы
+            </h1>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__paragraph_active">
+                        <a class="navigation__link" title="Вы уже на этой странице">Ремонтируемые устройства</a>
+                    </li>
+                    <li class="navigation__paragraph">
+                        <a class="navigation__link" href="">Дополнительные услуги</a>
+                    </li>
+                    <li class="navigation__paragraph">
+                        <a class="navigation__link" href="">Цены на услуги</a>
+                    </li>
+                    <li class="navigation__paragraph">
+                        <a class="navigation__link" href="">Адреса сервисных центров</a>
+                    </li>
+                    <li class="navigation__paragraph">
+                        <a class="navigation__link" href="">Специальные цены</a>
+                    </li>
+                    <li class="navigation__paragraph">
+                        <a class="navigation__link" href="">Отзывы</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="text-section">
+                <div class="text-section__description">
+                    <p class="text-section__paragraph">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <p class="text-section__paragraph hidden">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                    <button class="text-section__read-more-button show-more-button">
+                        <img src="img/show_more_arrow.svg">
+                        <p>Читать далее</p>
+                    </button>
+                    <button class="text-section__hide-button show-more-button hidden">
+                        <img src="img/hide_arrow.svg">
+                        <p>Скрыть</p>
+                    </button>
+                </div>
+                <img class="text-section__main-image" src="img/main_image.png" alt="Фото стены в офисе с вывеской и логотипом">
+            </section>
+            <section class="brands">
+                <h2 class="brands__subtitle subtitle">Ремонт техники различных брендов</h2>
+                <ul class="brands__brand-list brand-list">
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/lenovo.svg" alt="Lenovo">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/samsung.svg" alt="Samsung">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/apple.svg" alt="Apple">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/viewsonic.svg" alt="ViewSonic">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/bosch.svg" alt="Bosch">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/hp.svg" alt="HP">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/acer.svg" alt="Acer">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/sony.svg" alt="Sony">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/lenovo.svg" alt="Lenovo">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/samsung.svg" alt="Samsung">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="brand-list__brand">
+                        <img class="brand-list__logo" src="img/brands/apple.svg" alt="Apple">
+                        <a class="brand-list__link" title="Пока не работает" href=""><img class="brand-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                </ul>
+                <div class="brands__pagination pagination">
+                    <span class="pagination__dot pagination__dot_active"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                </div>
+                <button class="brands__show-more-button show-more-button">
+                    <img src="img/show_more_arrow.svg">
+                    <p>Показать ещё</p>
+                </button>
+                <button class="brands__hide-button show-more-button hidden">
+                    <img src="img/hide_arrow.svg">
+                    <p>Скрыть</p>
+                </button>
+            </section>
+            <section class="repair">
+                <h2 class="repair__subtitle subtitle">Ремонт различных видов техники</h2>
+                <ul class="repair__repair-list repair-list">
+                    <li class="repair-list__repair-type">
+                        <p class="repair-list__text">Ремонт ноутбуков</p>
+                        <a class="repair-list__link" title="Пока не работает" href=""><img class="repair-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="repair-list__repair-type">
+                        <p class="repair-list__text">Ремонт планшетов</p>
+                        <a class="repair-list__link" title="Пока не работает" href=""><img class="repair-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="repair-list__repair-type">
+                        <p class="repair-list__text">Ремонт ПК</p>
+                        <a class="repair-list__link" title="Пока не работает" href=""><img class="repair-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="repair-list__repair-type">
+                        <p class="repair-list__text">Ремонт мониторов</p>
+                        <a class="repair-list__link" title="Пока не работает" href=""><img class="repair-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                    <li class="repair-list__repair-type">
+                        <p class="repair-list__text">Ремонт смартфонов</p>
+                        <a class="repair-list__link" title="Пока не работает" href=""><img class="repair-list__button-image" src="img/go_button.svg" alt="Перейти по ссылке"></a>
+                    </li>
+                </ul>
+                <div class="repair__pagination pagination">
+                    <span class="pagination__dot pagination__dot_active"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                </div>
+                <button class="repair__show-more-button show-more-button">
+                    <img src="img/show_more_arrow.svg">
+                    <p>Показать ещё</p>
+                </button>
+                <button class="repair__hide-button show-more-button hidden">
+                    <img src="img/hide_arrow.svg">
+                    <p>Скрыть</p>
+                </button>
+            </section>
+            <h2 class="subtitle">Цены на услуги</h2>
+        </main>
+        <footer class="footer">
+            <p class="footer__paragraph">© 2019 CPS<br>Разработано командой Apesong</p>
+            <p class="footer__paragraph">Политика конфиденциальности</p>
+            <p class="footer__paragraph">Информация, размещенная на данной странице, не является публичной офертой</p>
+        </footer>
+    </body>
 </html>
