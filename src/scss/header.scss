@@ -2,7 +2,7 @@
 @import "color";
 
 $headerHeight: 78px;
-$iconsPath: "../img/icons/";
+
 
 .header {
   height: $headerHeight;
@@ -12,8 +12,7 @@ $iconsPath: "../img/icons/";
   justify-content: space-between;
 
   @media (min-width: $maxWidth) {
-    height: 0;
-    border: transparent;
+    display: none;
   }
 }
 
@@ -76,13 +75,12 @@ $iconsPath: "../img/icons/";
 }
 
 .header__right-divider {
-  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+  @media (min-width: $minWidth) {
     display: block;
   }
 }
 
 .header__menu-button {
-  background-image: url($iconsPath + "menu.svg");
   order: 0;
   @media (min-width: $maxWidth) {
     display: none;
@@ -91,42 +89,35 @@ $iconsPath: "../img/icons/";
 
 .header__call-button {
   display: none;
-  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+  @media (min-width: $minWidth) {
     display: block;
-    background-image: url($iconsPath + "call.svg");
   }
 }
 
 .header__chat-button {
   display: none;
-  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+  @media (min-width: $minWidth) {
     display: block;
-    background-image: url($iconsPath + "chat.svg");
   }
 }
 
 .header__profile-button {
   display: none;
-  @media (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+  @media (min-width: $minWidth) {
     display: block;
-    background-image: url($iconsPath + "profile.svg");
   }
 }
 
 .header__repair-button {
-  background-image: url($iconsPath + "repair.svg");
-  justify-self: flex-end;
   order: 3;
-  @media (min-width: $maxWidth) {
-    margin-top: 60px;
+  @media (min-width: $minWidth) {
+    display: block;
   }
 }
 
 .header__search-button {
-  background-image: url($iconsPath + "check_status.svg");
-  justify-self: flex-end;
   order: 4;
-  @media (min-width: $maxWidth) {
-    margin-top: 60px;
+  @media (min-width: $minWidth) {
+    display: block;
   }
 }

@@ -1,0 +1,15 @@
+@import "color";
+
+.input-box, .text-area {
+  background-color: $inputColor;
+  border: 1px $inputBorderColor solid;
+  border-radius: 5px;
+  outline: none;
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.text-area {
+  height: 118px;
+}

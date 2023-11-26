@@ -1,16 +1,37 @@
 @import "fonts";
 @import "color";
 @import "button";
+@import "input";
 @import "header";
 @import "sidebar";
 @import "main";
 @import "footer";
 
 body {
-  font-family: "TT Lakes";
+  font-family: "TT Lakes", sans-serif;
   background-color: $bodyBackgroundColor;
   margin: 0;
   padding: 0;
+  @media (min-width: $maxWidth) {
+    display: grid;
+    grid-template-areas:
+      "aside main"
+      "aside foot";
+    grid-template-rows: 1fr 120px;
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+body > .sidebar-left {
+  grid-area: aside;
+}
+
+body > main {
+  grid-area: main;
+}
+
+body > .footer {
+  grid-area: foot;
 }
 
 .hidden {

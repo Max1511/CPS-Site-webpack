@@ -8,7 +8,14 @@
   font-family: "TT Lakes";
   font-weight: 500;
   opacity: 100%;
+  display: flex;
+  gap: 10px;
+
   transition: opacity 200ms;
+}
+
+.button-with-text {
+  width: auto;
 }
 
 .button:hover {
@@ -19,16 +26,43 @@
   opacity: 20%;
 }
 
-.button-with-text {
-  @media (min-width: $maxWidth) {
-    min-width: 156px;
-  }
-}
-
-.button-with-text__text {
+.button__text {
   display: none;
   @media (min-width: $maxWidth) {
     display: block;
-    text-align: left;
+    text-align: right;
+    white-space: nowrap;
   }
+}
+
+.send-button {
+  width: 130px;
+  background-color: $interactiveColor;
+  border: transparent;
+  border-radius: 40px;
+  text-transform: uppercase;
+  opacity: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  transition: opacity 300ms;
+}
+
+.send-button:hover {
+  opacity: 60%;
+}
+
+.send-button__text {
+  font-family: "TT Lakes", sans-serif;
+  color: $mainColor;
+  font-weight: 600;
+  margin: 8px;
+}
+
+.send-button__image {
+  margin: 8px;
 }

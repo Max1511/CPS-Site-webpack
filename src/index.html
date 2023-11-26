@@ -14,81 +14,151 @@
             <div class="header__left-part">
                 <img class="header__logo" src="img/cps_logo.svg" alt="Логотип CPS">
                 <img class="header__left-divider divider" src="img/divider.svg" alt="Логотип CPS">
-                <button class="header__menu-button button" name="menu" title="Открыть меню"></button>
+                <button class="header__menu-button button" name="menu" title="Открыть меню">
+                    <img src="../img/icons/menu.svg" alt="Меню">
+                </button>
             </div>
             <div class="header__right-part">
-                <button class="header__call-button button" name="call"></button>
-                <button class="header__chat-button button" name="chat"></button>
-                <button class="header__profile-button button" name="profile"></button>
-                <img class="header__right-divider divider" src="img/divider.svg" alt="Логотип CPS">
-                <button class="header__repair-button button button-with-text" name="repair">
-                    <p class="button-with-text__text">Оставить заявку</p>
+                <button class="header__call-button button" name="call" title="Заказать звонок">
+                    <img src="../img/icons/call.svg" alt="Звонок">
                 </button>
-                <button class="header__search-button button button-with-text" name="search">
-                    <p class="button-with-text__text">Статус ремонта</p>
+                <button class="header__chat-button button" name="chat" title="Открыть чат">
+                    <img src="../img/icons/chat.svg" alt="Чат">
+                </button>
+                <button class="header__profile-button button" name="profile" title="Открыть профиль">
+                    <img src="../img/icons/profile.svg" alt="Профиль">
+                </button>
+                <img class="header__right-divider divider" src="img/divider.svg" alt="Логотип CPS">
+                <button class="header__repair-button button" name="repair" title="Оставить заявку">
+                    <img src="../img/icons/repair.svg" alt="Ремонт">
+                </button>
+                <button class="header__search-button button" name="status" title="Статус ремонта">
+                    <img src="../img/icons/check_status.svg" alt="Статус">
                 </button>
             </div>
         </header>
-        <div class="sidebars-layer hidden"></div>
+        <div class="sidebar-left-layer hidden"></div>
+        <div class="sidebar-right-layer hidden"></div>
         <aside class="sidebar-left sidebar-menu">
-            <div class="sidebar__top-part">
-                <div class="sidebar__header">
-                    <div class="sidebar__left-part">
-                        <button class="sidebar__close-button button" name="close" title="Закрыть меню"></button>
-                        <img class="sidebar__logo" src="../img/cps_logo.svg" alt="Логотип CPS">
+            <div class="sidebar-menu__top-part">
+                <div class="sidebar-menu__header">
+                    <div class="sidebar-menu__left-part">
+                        <button class="sidebar-menu__close-button button" name="close" title="Закрыть меню">
+                            <img src="../img/icons/burger.svg" alt="Закрыть">
+                        </button>
+                        <img class="sidebar-menu__logo" src="../img/cps_logo.svg" alt="Логотип CPS">
                     </div>
-                    <div class="sidebar__right-part">
-                        <button class="sidebar__search-button button" name="search"></button>
+                    <div class="sidebar-menu__right-part">
+                        <button class="sidebar-menu__search-button button" name="search" title="Искать по сайту">
+                            <img src="../img/icons/search.svg" alt="Искать">
+                        </button>
                     </div>
                 </div>
-                <nav class="sidebar__navigation">
-                    <ul class="sidebar__list">
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Ремонт техники</a>
+                <nav class="sidebar-menu__navigation">
+                    <ul class="sidebar-menu__list">
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Ремонт техники</a>
                         </li>
-                        <li class="sidebar__paragraph_active">
-                            <a class="sidebar__link_active" title="Вы уже на этой странице">Услуги и сервисы</a>
+                        <li class="sidebar-menu__paragraph_active">
+                            <a class="sidebar-menu__link_active" title="Вы уже на этой странице">Услуги и сервисы</a>
                         </li>
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Корпоративным клиентам</a>
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Корпоративным клиентам</a>
                         </li>
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Продавцам техники</a>
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Продавцам техники</a>
                         </li>
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Партнёрам</a>
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Партнёрам</a>
                         </li>
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Производителям</a>
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Производителям</a>
                         </li>
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Наши сервисные центры</a>
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Наши сервисные центры</a>
                         </li>
-                        <li class="sidebar__paragraph">
-                            <a class="sidebar__link" href="">Контакты</a>
+                        <li class="sidebar-menu__paragraph">
+                            <a class="sidebar-menu__link" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="sidebar__bottom-part">
-                <div class="sidebar__buttons-bottom">
-                    <button class="sidebar__call-button button" name="call"></button>
-                    <button class="sidebar__chat-button button" name="call"></button>
-                    <button class="sidebar__profile-button button" name="call"></button>
+            <div class="sidebar-menu__bottom-part">
+                <div class="sidebar-menu__buttons-bottom">
+                    <button class="sidebar-menu__call-button button" name="call" title="Заказать звонок">
+                        <img src="../img/icons/call.svg" alt="Звонок">
+                    </button>
+                    <button class="sidebar-menu__chat-button button" name="chat" title="Открыть чат">
+                        <img src="../img/icons/chat.svg" alt="Чат">
+                    </button>
+                    <button class="sidebar-menu__profile-button button" name="profile" title="Открыть профиль">
+                        <img src="../img/icons/profile.svg" alt="Профиль">
+                    </button>
                 </div>
-                <p class="sidebar__mail">mail@cps.com</p>
-                <p class="sidebar__phone-number">8 800 890 8900</p>
-                <div class="sidebar__lang-changer">
-                    <a class="sidebar__link_active" title="Выбран данный язык">RU</a>
-                    <a class="sidebar__link" href="">EN</a>
-                    <a class="sidebar__link" href="">CH</a>
+                <p class="sidebar-menu__mail">mail@cps.com</p>
+                <p class="sidebar-menu__phone-number">8 800 890 8900</p>
+                <div class="sidebar-menu__lang-changer">
+                    <a class="sidebar-menu__link_active" title="Выбран данный язык">RU</a>
+                    <a class="sidebar-menu__link" href="">EN</a>
+                    <a class="sidebar-menu__link" href="">CH</a>
                 </div>
             </div>
         </aside>
-        <main>
-            <h1 class="title">
-                Услуги и сервисы
+        <aside class="sidebar-right sidebar-feedback">
+            <button class="sidebar-feedback__close-button button" name="close" title="Закрыть">
+                <img src="../img/icons/burger.svg" alt="Закрыть">
+            </button>
+            <h1 class="sidebar-feedback__title title">
+                Обратная связь
             </h1>
+            <form class="sidebar-feedback__form">
+                <input class="sidebar-feedback__input-box input-box" type="text" name="name" placeholder="Имя" required>
+                <input class="sidebar-feedback__input-box input-box" type="phone" name="phone" placeholder="Телефон" required>
+                <input class="sidebar-feedback__input-box input-box" type="email" name="email" placeholder="Электронная почта" required>
+                <textarea class="sidebar-feedback__text-area text-area" name="message" placeholder="Сообщение"></textarea>
+            </form>
+            <p class="sidebar-feedback__paragraph">
+                Нажимая “отправить”, вы даете согласие на <a href="">обработку персональных данных</a> и соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+            </p>
+            <button class="sidebar-feedback__button send-button">
+                <p class="send-button__text">Отправить</p>
+                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+            </button>
+        </aside>
+        <aside class="sidebar-right sidebar-request">
+            <button class="sidebar-request__close-button button" name="close" title="Закрыть">
+                <img src="../img/icons/burger.svg" alt="Закрыть">
+            </button>
+            <h1 class="sidebar-request__title title">
+                Заказать звонок
+            </h1>
+            <form class="sidebar-request__form">
+                <input class="sidebar-request__input-box input-box" type="phone" name="phone" placeholder="Телефон" required>
+            </form>
+            <p class="sidebar-request__paragraph">
+                Нажимая “отправить”, вы даете согласие на <a href="">обработку персональных данных</a> и соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+            </p>
+            <button class="sidebar-request__button send-button" title="Отправить форму">
+                <p class="send-button__text">Отправить</p>
+                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+            </button>
+        </aside>
+        <main>
+            <div class="title-block">
+                <h1 class="title-block__title title">
+                    Услуги и сервисы
+                </h1>
+                <div class="title-block__buttons">
+                    <button class="title-block__repair-button button button-with-text" name="repair">
+                        <p class="button__text">Оставить заявку</p>
+                        <img src="../img/icons/repair.svg" alt="Ремонт">
+                    </button>
+                    <button class="title-block__search-button button button-with-text" name="status">
+                        <p class="button__text">Статус ремонта</p>
+                        <img src="../img/icons/check_status.svg" alt="Статус">
+                    </button>
+                </div>
+            </div>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__paragraph_active">
@@ -240,7 +310,91 @@
                     <p>Скрыть</p>
                 </button>
             </section>
-            <h2 class="subtitle">Цены на услуги</h2>
+            <section class="prices">
+                <h2 class="prices__subtitle subtitle">Цены на услуги</h2>
+                <div class="prices__table">
+                    <div class="prices__chapters">
+                        <h3 class="prices__chapter">Ремонтные услуги</h3>
+                        <h3 class="prices__chapter">Цена</h3>
+                        <h3 class="prices__chapter">Срок</h3>
+                    </div>
+                    <ul class="prices__price-list price-list">
+                        <li class="price-list__service">
+                            <h3 class="price-list__chapter">Ремонтные услуги</h3>
+                            <p class="price-list__name">Диагностика</p>
+                            <h3 class="price-list__chapter">Цена</h3>
+                            <p class="price-list__price">Бесплатно</p>
+                            <h3 class="price-list__chapter">Срок</h3>
+                            <p class="price-list__term">30 мин</p>
+                            <button class="price-list__button send-button">
+                                <p class="send-button__text">Заказать</p>
+                                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+                            </button>
+                        </li>
+                        <li class="price-list__service">
+                            <h3 class="price-list__chapter">Ремонтные услуги</h3>
+                            <p class="price-list__name">Замена дисплея</p>
+                            <h3 class="price-list__chapter">Цена</h3>
+                            <p class="price-list__price">1000 ₽</p>
+                            <h3 class="price-list__chapter">Срок</h3>
+                            <p class="price-list__term">30-120 мин</p>
+                            <button class="price-list__button send-button">
+                                <p class="send-button__text">Заказать</p>
+                                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+                            </button>
+                        </li>
+                        <li class="price-list__service">
+                            <h3 class="price-list__chapter">Ремонтные услуги</h3>
+                            <p class="price-list__name">Замена полифонического динамика</p>
+                            <h3 class="price-list__chapter">Цена</h3>
+                            <p class="price-list__price">1000 ₽</p>
+                            <h3 class="price-list__chapter">Срок</h3>
+                            <p class="price-list__term">30-120 мин</p>
+                            <button class="price-list__button send-button">
+                                <p class="send-button__text">Заказать</p>
+                                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+                            </button>
+                        </li>
+                        <li class="price-list__service">
+                            <h3 class="price-list__chapter">Ремонтные услуги</h3>
+                            <p class="price-list__name">Тестирование с выдачей технического заключения</p>
+                            <h3 class="price-list__chapter">Цена</h3>
+                            <p class="price-list__price">1000 ₽</p>
+                            <h3 class="price-list__chapter">Срок</h3>
+                            <p class="price-list__term">30-120 мин</p>
+                            <button class="price-list__button send-button">
+                                <p class="send-button__text">Заказать</p>
+                                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+                            </button>
+                        <li class="price-list__service">
+                            <h3 class="price-list__chapter">Ремонтные услуги</h3>
+                            <p class="price-list__name">Замена программного обеспечения</p>
+                            <h3 class="price-list__chapter">Цена</h3>
+                            <p class="price-list__price">1000 ₽</p>
+                            <h3 class="price-list__chapter">Срок</h3>
+                            <p class="price-list__term">30-120 мин</p>
+                            <button class="price-list__button send-button">
+                                <p class="send-button__text">Заказать</p>
+                                <img class="send-button__image" src="../img/arrow_order.svg" alt="Далее">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="prices__pagination pagination">
+                    <span class="pagination__dot pagination__dot_active"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                    <span class="pagination__dot"></span>
+                </div>
+                <p class="prices__paragraph">
+                    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                </p>
+                <button class="prices__next-button show-more-button">
+                    <p>Получить коммерческое предложение</p>
+                    <img src="../img/arrow.svg" alt="Далее">
+                </button>
+            </section>
         </main>
         <footer class="footer">
             <p class="footer__paragraph">© 2019 CPS<br>Разработано командой Apesong</p>

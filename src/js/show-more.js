@@ -17,32 +17,32 @@ export const hide = (element, showButton, hideButton, hiddenClass) => {
 export const initHiddenArray = function (elements, showButton, hideButton, count) {
   showButton.classList.remove("hidden");
   hideButton.classList.add("hidden");
-  elements.forEach((element, index) => {
-      element.classList.add("hidden");
-      if (index < count) {
-          element.classList.remove("hidden");
+  for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.add("hidden");
+      if (i < count) {
+        elements[i].classList.remove("hidden");
       }
-  });
+  }
 }
 
 export const showMoreArray = (elements, showButton, hideButton, hiddenClass) => {
   showButton.addEventListener("click", () => {
-    elements.array.forEach(element => {
-      element.classList.remove(hiddenClass);
-    });
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.remove(hiddenClass);
+    }
     showButton.classList.add(hiddenClass);
     hideButton.classList.remove(hiddenClass);
   });
 }
 
 export const hideArray = (elements, showButton, hideButton, count, hiddenClass) => {
-  showButton.addEventListener("click", () => {
-    elements.array.forEach((element, index) => {
-      if (index >= count) {
-        element.classList.add(hiddenClass);
+  hideButton.addEventListener("click", () => {
+    for (let i = 0; i < elements.length; i++) {
+      if (i >= count) {
+        elements[i].classList.add(hiddenClass);
       }
-    });
-    showButton.classList.add(hiddenClass);
-    hideButton.classList.remove(hiddenClass);
+    }
+    showButton.classList.remove(hiddenClass);
+    hideButton.classList.add(hiddenClass);
   });
 }

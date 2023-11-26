@@ -2,3 +2,10 @@ $minMobileWidth: 320px;
 $maxMobileWidth: 360px;
 $minWidth: 768px;
 $maxWidth: 1440px;
+
+:export {
+  minMobileWidth: $minMobileWidth;
+  maxMobileWidth: $maxMobileWidth;
+  minWidth: $minWidth;
+  maxWidth: $maxWidth;
+}
