@@ -1,10 +1,12 @@
-export const updatePagination = (listDiv, pagination, DotActiveClass, elementWidth) => {
+export const updatePagination = (listDiv, pagination, DotActiveClass) => {
   listDiv.addEventListener("scroll", () => {
-    let scrollX = listDiv.scrollLeft;
-    let elements = pagination.children;
-    for (let i = 0; i < elements.length; i++) {
+    const scrollX = listDiv.scrollLeft;
+    const elements = pagination.children;
+    const count = elements.length;
+    const sliderLength = listDiv.scrollWidth - listDiv.offsetWidth;
+    for (let i = 0; i < count; i++) {
         elements[i].classList.remove(DotActiveClass);
-        if (scrollX >= elementWidth * i - elementWidth * 2/3 && scrollX < elementWidth * (i + 1) - elementWidth * 2/3) {
+        if (scrollX >= sliderLength / count * i  && scrollX <= sliderLength / count * (i + 1)) {
           elements[i].classList.add(DotActiveClass);
         }
       }

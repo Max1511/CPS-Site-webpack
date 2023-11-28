@@ -47,7 +47,7 @@ hide(mainText[1], showMoreButton, hideButton, hiddenClass);
 const brandsPagination = document.querySelector(".brands__pagination");
 const brandList = document.querySelector(".brands__brand-list");
 
-updatePagination(brandList, brandsPagination, "pagination__dot_active", 240);
+updatePagination(brandList, brandsPagination, "pagination__dot_active");
 
 const brands = document.querySelectorAll(".brand-list__brand");
 const showMoreBrandsButton = document.querySelector(".brands__show-more-button");
@@ -68,7 +68,7 @@ hideArray(brands, showMoreBrandsButton, hideBrandsButton, visibleBrandsCount, hi
 const repairPagination = document.querySelector(".repair__pagination");
 const repairList = document.querySelector(".repair__repair-list");
 
-updatePagination(repairList, repairPagination, "pagination__dot_active", 240);
+updatePagination(repairList, repairPagination, "pagination__dot_active");
 
 const repair = document.querySelectorAll(".repair-list__repair-type");
 const showMoreRepairButton = document.querySelector(".repair__show-more-button");
@@ -89,4 +89,4 @@ hideArray(repair, showMoreRepairButton, hideRepairButton, visibleRepairCount, hi
 const pricePagination = document.querySelector(".prices__pagination");
 const priceList = document.querySelector(".prices__price-list");
 
-updatePagination(priceList, pricePagination, "pagination__dot_active", 260);
+updatePagination(priceList, pricePagination, "pagination__dot_active");
