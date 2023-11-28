@@ -578,9 +578,11 @@
       transition-duration: 500ms; } }
 
 .sidebar-left_open {
-  left: 0;
-  box-shadow: 10px 0 35px #7E7E82;
-  transition-timing-function: ease-out; }
+  left: 0; }
+  @media (max-width: 1439px) {
+    .sidebar-left_open {
+      box-shadow: 10px 0 35px #7E7E82;
+      transition-timing-function: ease-out; } }
 
 .sidebar-menu__top-part {
   display: flex;
@@ -872,7 +874,7 @@
 
 .brand-list, .repair-list {
   display: flex;
-  margin: 20px 0 10px 15px;
+  margin: 20px 15px 10px 15px;
   padding: 0;
   gap: 15px; }
   @media (max-width: 767px) {
@@ -972,7 +974,7 @@
       margin-left: 10px; } }
 
 .price-list {
-  margin: 20px 0 10px 15px;
+  margin: 20px 15px 10px 15px;
   padding: 0;
   list-style: none;
   overflow-x: scroll;
