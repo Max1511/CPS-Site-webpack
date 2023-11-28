@@ -45,8 +45,10 @@ $maxLeftSidebarWidth: 440px;
 
 .sidebar-left_open {
   left: 0;
-  box-shadow: 10px 0 35px ($shadowColor);
-  transition-timing-function: ease-out;
+  @media (max-width: ($maxWidth - 1)) {
+    box-shadow: 10px 0 35px ($shadowColor);
+    transition-timing-function: ease-out;
+  }
 }
 
 .sidebar-menu__top-part {
